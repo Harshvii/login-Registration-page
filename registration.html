@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <!-- Login Form -->
+    <div class="container" id="loginForm">
+        <div class="form-box">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" id="username">
+            <input type="password" placeholder="Password" id="password">
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showRegistration()">Sign Up</a></p>
+        </div>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="container" id="registrationForm" style="display: none;">
+        <div class="form-box">
+            <h2>Registration</h2>
+            <input type="text" placeholder="First Name" id="firstName">
+            <input type="text" placeholder="Middle Name" id="middleName">
+            <input type="text" placeholder="Last Name" id="lastName">
+            <input type="number" placeholder="Age" id="age">
+            
+            <div class="gender-group">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+            </div>
+            
+            <input type="tel" placeholder="Phone Number" id="phone">
+            
+            <div class="occupation-group">
+                <label>Occupation:</label>
+                <select id="occupation">
+                    <option value="">Select Occupation</option>
+                    <option value="student">Student</option>
+                    <option value="employee">Employee</option>
+                </select>
+            </div>
+
+            <button onclick="register()">Submit</button>
+            <button onclick="showLogin()" class="secondary">Back to Login</button>
+        </div>
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+</html> 

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://64.media.tumblr.com/6cd746650c429e538bd28b2e7035e0fa/3dcf9d0ef49887a1-37/s2048x3072/ffcb6459b96ff94838c8a902b501d6c333a088d0.pnj);
+
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    opacity: 85%;
+}
+
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background:#ec098d93;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background:#ed43a693;
+}
+
+button.secondary {
+    background: #ed43a693;
+}
+
+button.secondary:hover {
+    background:#ed43a693;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+a {
+    color: #029aff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.gender-group, .occupation-group {
+    margin-bottom: 15px;
+}
+
+.gender-group label, .occupation-group label {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+}
+
+.gender-group input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+select {
+    background: white;
+} 
